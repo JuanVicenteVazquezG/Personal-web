@@ -27,6 +27,7 @@ body {
   color: white;
   font-size: 2.8rem;
   background-color: #041230;
+  left: -25%;
 }
 
 .container-left nav {
@@ -69,7 +70,11 @@ select {
   flex-direction: column;
   justify-content: space-around;
   background: transparent;
-  align-items: stretch; /* Or center when the menu is hide*/
+  align-items: center; /* Or center when the menu is hide*/
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  margin: 0;
 }
 
 .container-left ul {
@@ -78,7 +83,7 @@ select {
 }
 
 .container-foto {
-  margin: 0 20%;
+  margin: 0 18% 0 0;
 }
 .me-circular {
   width: 200px;
@@ -89,13 +94,13 @@ select {
 }
 
 .me-circular img {
-  margin-left: -89px;
+  margin-left: -47%;
 }
 
 .name {
   font-weight: lighter;
   font-size: 4rem;
-  margin-left: 10%;
+  margin: 0 18% 0 0;
 }
 .open-menu {
   color: yellow;
@@ -116,25 +121,16 @@ select {
 } */
 .iam {
   font-weight: lighter;
-  margin-left: 18%;
+  margin: 0 18% 0 0;
 }
 
 .bolder {
   font-weight: bolder;
 }
 
-@media (max-width: 767px) {
-  .container-left {
-    left: -25%;
-  }
+@media (min-width: 768px) and (max-width:961px)
+{
   .container-right {
-    align-items: center;
-    margin: 0;
-  }
-.name{
-  margin:0;
-}
-  .iam {
-    margin-left: 0;
+    display: none;
   }
 }
