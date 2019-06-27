@@ -5,6 +5,7 @@ html {
 
 body {
   background-color: #041230;
+  box-sizing: border-box;
 }
 .super-container-wrapper-all {
   width: 100%;
@@ -12,16 +13,13 @@ body {
   font-size: 2rem;
 }
 
-.container-left {
+.container-left{  /*hover??*/
   width: 20%;
   height: 100%;
   position: fixed;
-  left: 0;
-  top: 0;
-  border-right: 1px solid #b3985b;
+    border-right: 1px solid #b3985b;
   color: white;
-  font-size:4rem;
-  
+  font-size: 3rem;
 }
 
 .container-right {
@@ -30,10 +28,51 @@ body {
   padding: 2%;
   color: white;
   margin-left: 20%;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
 }
 
-.container-left ul{
-    width:90%;
-    height:33%;
-    padding: 50% 0;
+.container-left ul {
+  width: 100%;
+  height: 50%;
+ 
+}
+
+.container-left nav {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin:50% auto;
+}
+
+.container-left ul li {
+  display: inline-block;
+  padding: 12% auto;
+  text-align: center;
+  width: 100;
+  margin:10% 0;
+  
+  }
+
+.container-left a, .container-left a:visited{
+    text-decoration:none;
+    color:white;
+}
+
+.me{
+    width:100%;
+   
+}
+
+.me img{
+    width:100%;
+    border-radius:100%;
+    margin: 0 auto;
+}
+
+.text1st{
+    width:40%;
 }
