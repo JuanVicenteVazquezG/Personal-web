@@ -1,0 +1,39 @@
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  background-color: #041230;
+}
+.super-container-wrapper-all {
+  width: 100%;
+  height: auto;
+  font-size: 2rem;
+}
+
+.container-left {
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #b3985b;
+  color: white;
+  font-size:4rem;
+  
+}
+
+.container-right {
+  width: 80%;
+  height: 100%;
+  padding: 2%;
+  color: white;
+  margin-left: 20%;
+}
+
+.container-left ul{
+    width:90%;
+    height:33%;
+    padding: 50% 0;
+}
